@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 const HeaderContainer = () => {
     const ImageThumbnail = () => {
@@ -9,21 +10,17 @@ const HeaderContainer = () => {
         )
     }
     
-    const NewDate = () => {
-        return (
-            Date.now(NewDate)
-        )
-    }
+    const NewDate = () => moment().format("D MMM");
+    
 
     const HeaderTitle = () => {
         return (
         <div className="header-title">
             <h3>Lambda School <br/></h3> 
-            <p className="grey-tags"> @LambdaSchool - <br/></p> 
+            <p className="grey-tags"> @LambdaSchool . <br/></p> 
             <div className="grey-tags">
                 <NewDate />
             </div>
-            
         </div>
         )
         
