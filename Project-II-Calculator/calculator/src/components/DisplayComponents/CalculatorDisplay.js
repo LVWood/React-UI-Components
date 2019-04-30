@@ -2,8 +2,12 @@ import React from 'react';
 import './Display.css';
 
 
-const CalculatorDisplay = props => {
-    return <h1 className="displayPanel">{}</h1>;
-};
+const CalculatorDisplay = () => {
+    return (
+        <div className="display-panel">
+            <input type="hidden" value="text"/>
+        </div>
+    )
+}
 
 export default CalculatorDisplay;

@@ -1,31 +1,28 @@
 import React from 'react';
-import './Button.css';
 
-// const NumButton = [
-//     <button className="number-button" >1</button>
-//     <button className="number-button" >2</button>
-//     <button className="number-button" >3</button>
-//     <button className="number-button" >4</button>
-//     <button className="number-button" >5</button>
-//     <button className="number-button" >6</button>
-//     <button className="number-button" >7</button>
-//     <button className="number-button" >8</button>
-//     <button className="number-button" >9</button>
-// ]
-
-const NumButton = <button>{}</button>
-const OpButton = <button>{}</button>
-
-const NumberButton = props => {
+const NumberButton = () => {
     return (
-        <div>
-            <button className="number-button">{NumButton.props.text}</button>
-            <button className="number-button">{NumButton.props.text}</button>
-            <button className="number-button">{NumButton.props.text}</button>
-            <button className="operator-button">{OpButton.props.text}</button>
+        <div className="square-button-container">
+            <div className="number-panel">
+                <button className="number">7</button>
+                <button className="number">8</button>
+                <button className="number">9</button>
+                <button className="operator">x</button>
+            </div>
+                <div className="number-panel">
+                <button className="number">4</button>
+                <button className="number">5</button>
+                <button className="number">6</button>
+                <button className="operator">--</button>
+            </div>
+            <div className="number-panel">
+                <button className="number">1</button>
+                <button className="number">2</button>
+                <button className="number">3</button>
+                <button className="operator">+</button>
+            </div>
         </div>
     )
-    
-};
+}
 
 export default NumberButton;

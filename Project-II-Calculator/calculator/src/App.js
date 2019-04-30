@@ -2,17 +2,24 @@ import React from 'react';
 import './App.css';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import NumberButton from './components/ButtonComponents/NumberButton';
-import ActionButton from './components/ButtonComponents/ActionButton';
+import ActionButtonOne from './components/ButtonComponents/ActionButton';
+import ActionButtonTwo from './components/ButtonComponents/ActionButtonTwo';
 
 const App = () => {
   return (
-    <div>
-      <CalculatorDisplay />
-      <ActionButton text={"clear"} text={"/"} />
-      <NumberButton text="7" text="8" text="9" text="x" />
-      <NumberButton text="4" text="5" text="6" text="x" />
-      <NumberButton text="1" text="2" text="3" text="x" />
-      <ActionButton text={"0"} text={"="} />
+    <div className="calc-container">
+      <div className="display">
+        <CalculatorDisplay />
+      </div>
+      <div className="action-buttons">
+        <ActionButtonOne />
+      </div>
+      <div className="num-button-container">
+        <NumberButton />
+      </div>
+      <div className="action-buttons">
+        <ActionButtonTwo />
+      </div>      
     </div>
   );
 };
