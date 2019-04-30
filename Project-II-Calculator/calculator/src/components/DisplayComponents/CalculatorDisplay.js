@@ -2,11 +2,9 @@ import React from 'react';
 import './Display.css';
 
 
-const CalculatorDisplay = () => {
+const CalculatorDisplay = props => {
     return (
-        <div className="display-panel">
-            <input type="hidden" value="text"/>
-        </div>
+        <div className="display-panel">{props.total}{props.display}</div>
     )
 }
 
