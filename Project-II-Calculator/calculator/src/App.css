@@ -12,6 +12,7 @@ body {
     margin: 0;
     height: 75px;
     border: .5px solid lightgray;
+    color: white;
 }
 
 .action-panel {
