@@ -1,31 +1,28 @@
 import React from 'react';
-import './Button.css';
-
-// const NumButton = [
-//     <button className="number-button" >1</button>
-//     <button className="number-button" >2</button>
-//     <button className="number-button" >3</button>
-//     <button className="number-button" >4</button>
-//     <button className="number-button" >5</button>
-//     <button className="number-button" >6</button>
-//     <button className="number-button" >7</button>
-//     <button className="number-button" >8</button>
-//     <button className="number-button" >9</button>
-// ]
-
-const NumButton = <button>{}</button>
-const OpButton = <button>{}</button>
 
 const NumberButton = props => {
     return (
-        <div>
-            <button className="number-button">{NumButton.props.text}</button>
-            <button className="number-button">{NumButton.props.text}</button>
-            <button className="number-button">{NumButton.props.text}</button>
-            <button className="operator-button">{OpButton.props.text}</button>
+        <div className="square-button-container">
+            <div className="number-panel">
+                <button className="number" onClick={() => props.input(7)}>7</button>
+                <button className="number" onClick={() => props.input(8)}>8</button>
+                <button className="number" onClick={() => props.input(9)}>9</button>
+                <button className="operator" onClick={() => {props.input(props.operator.multiply)}}>x</button>
+            </div>
+                <div className="number-panel">
+                <button className="number" onClick={() => props.input(4)}>4</button>
+                <button className="number" onClick={() => props.input(5)}>5</button>
+                <button className="number" onClick={() => props.input(6)}>6</button>
+                <button className="operator" onClick={() => {props.input(props.operators.minus)}}>-</button>
+            </div>
+            <div className="number-panel">
+                <button className="number" onClick={() => props.input(1)}>1</button>
+                <button className="number" onClick={() => props.input(2)}>2</button>
+                <button className="number" onClick={() => props.input(3)}>3</button>
+                <button className="operator" onClick={() => {props.input(props.operators.plus)}}>+</button>
+            </div>
         </div>
     )
-    
-};
+}
 
 export default NumberButton;

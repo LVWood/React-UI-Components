@@ -1,15 +1,18 @@
 import React from 'react';
-
-import HeaderContainer from './components/HeaderComponents/HeaderContainer';
-import CardContainer from './components/CardComponents/CardContainer';
-
+import HeaderContainer from './components/HeaderContainer';
+import CardContainer from './components/CardContainer';
+import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+const App =() => {
   return (
     <div className="App">
-      <HeaderContainer />
-      <CardContainer />
+      <div className="lambda-card">
+        <HeaderContainer />
+        <CardContainer />
+        <Footer />
+      </div>
+      
     </div>
   )
 }

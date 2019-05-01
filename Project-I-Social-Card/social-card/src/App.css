@@ -2,27 +2,116 @@
   Write your styles/CSS for App.js here and import into the component that you need 
   IF you'd like to attempt to use less you'll have to research how to do this with Create React App
 */
+.lambda-card {
+  max-width: 576px;
+  /* background-color: pink; */
+  box-sizing: border-box;
+  margin: 3px;
+  padding: 3px;
 
-.App {
-  width: 393px;
-  height: 334px;
+}
+
+.logo {
+  max-width: 58px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.card-header {
   display: flex;
-  flex-direction: column;
-}
-h1 {
-  font-size: .6rem;
-  font-style: bold;
-  line-height: .75rem;
+  justify-content: flex-start;
+  margin-bottom: -5px;
 }
 
-p {
-  font-size: .6rem;
-  line-height: .75rem;
+.header-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25px;
+  margin-bottom: -10px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.header-content {
+  padding: 0 10px;
+}
+
+.grey-tags {
+  color: lightgray;
+  font-size: .8rem;
+}
+
+.bottom-content {
+  margin: 0 0 0 68px;
+  border: .5px solid lightgray;
+  border-radius: 5px;
+}
+
+.banner-img {
+  max-width: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 a {
-  font-size: .5rem;
-  line-height: .75rem;
-  color: gray;
   text-decoration: none;
+  color: black;
+}
+
+.card-content {
+  padding: 0 10px;
+  
+}
+
+.lower-title {
+  margin: 10px 0 -5px 0;
+  text-decoration: bold;
+}
+
+.card-container {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .9rem;
+  line-height: 1rem;
+}
+
+.grey-tags {
+  color: grey;
+  font-size: .8rem;
+}
+
+.footer-bar {
+  display: flex;
+  margin: 5px 0 5px 68px;
+  height: 50px;
+  align-items: center;
+}
+
+.icons {
+  max-width: 20px;
+  /* background-image: url("https://www.freeiconspng.com/minicovers/thought-icon-bubble-thought-icon-6.png"); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 10px;
+
+}
+
+.footer-bar a {
+  padding: 10px;
+  
+
 }

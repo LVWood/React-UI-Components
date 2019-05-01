@@ -1,9 +1,14 @@
 import React from 'react';
 import './Display.css';
+// import NumberButtons from './NumberButtons';
 
 
 const CalculatorDisplay = props => {
-    return <h1 className="displayPanel">{}</h1>;
-};
+    return (
+        <div className="display-panel" >
+            <p> {props.display} {props.input} </p>
+        </div>
+    )
+}
 
 export default CalculatorDisplay;
